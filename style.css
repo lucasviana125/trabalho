@@ -1,0 +1,95 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fundo e estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #4B0082; /* Roxo */
+    color: #FFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    color: #FFF;
+}
+
+/* Lista de filmes */
+.movie-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+}
+
+/* Cartão de filme */
+.movie-card {
+    background-color: #6A0DAD; /* Cor mais clara que o fundo */
+    border: 2px solid #FFF;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.movie-card:hover {
+    transform: scale(1.05);
+}
+
+.movie-image {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-bottom: 2px solid #FFF;
+}
+
+.movie-info {
+    padding: 15px;
+    text-align: center;
+}
+
+.movie-title {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.show-more-btn {
+    background-color: #8057BA;
+    color: #FFF;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+    width: 100%;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+.show-more-btn:hover {
+    background-color: #A287E2;
+}
+
+/* Estilos para avaliação */
+.rating-stars {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.rating-stars span {
+    font-size: 1.5em;
+    color: #FFD700; /* Cor de estrela */
+}
